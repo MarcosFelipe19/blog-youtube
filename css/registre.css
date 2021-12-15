@@ -1,0 +1,40 @@
+section.registre{
+    background-color: #f9f9f9;
+    margin-top: 114px;
+}
+section.registre form{
+    padding: 30px 2%;
+}
+section.registre h1{
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #444;
+}
+section.registre .input{
+    padding-top: 30px;
+    width: 90%;
+}
+section.registre p.rotulo{
+    text-transform: capitalize;
+}
+section.registre input:not(input[type=submit]){
+    width: 80%;
+    height: 40px;
+    padding-left: 8px;
+    line-height: 40px;
+    color: #333;
+    border:solid 1px #ccc;
+    margin-top: 10px;
+}
+section.registre input[type=submit]{
+    width: 120px;
+    height:50px;
+    background-color: #000;
+    color: white;
+    border: 0;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+

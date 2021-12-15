@@ -1,0 +1,484 @@
+/*incluindo fonts*/
+@font-face {
+    font-family: "font-lato-light";
+    src: url('../../fonts/Lato/Lato-Light.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "font-lato-light";
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+}
+.center{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*section entrar*/
+section.entrar{
+    background-image: linear-gradient( #bdfff6   , #fff);
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+section.entrar form{
+width: 100%;
+max-width: 720px;
+height: 400px;
+border-radius: 40px ;
+text-align: center;
+margin: 100px auto;
+background-color: #5e554e;
+box-shadow: 5px 5px 10px 5px;
+padding-top: 50px;
+text-align: center;
+}
+section.entrar .container-form{
+display: inline-block;
+width: 100%;
+text-align: left;
+max-width: 600px;
+}
+section.entrar .rotulo{
+text-align: left;
+font-weight: 400;
+color: #fff;
+padding-left: 20px;
+}
+section.entrar .input{
+width: 100%;
+padding: 10px 20px;
+}
+section.entrar div.input  input:not(input[type=submit]){
+width: 100%;
+height: 50px;
+padding-left: 15px;
+line-height: 40px;
+color: #333;
+border:0;
+margin-top: 10px;
+border-radius: 20px;
+font-size: 16px;
+}
+section.entrar input[type=submit]{
+width: 100px;
+height:40px;
+margin-left:10px;
+border-radius: 5px;
+background-color: #000;
+color: white;
+letter-spacing: 1px;
+border: 0;
+cursor: pointer;
+margin-left: 30px;
+}
+section.entrar .input-login input[type=checkbox]{
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+section.entrar .input-login p{
+    display: inline-block;
+    margin-top: 10px;
+} 
+
+/*fim section entrar*/
+
+/*painel de controle*/
+.clear{
+    clear: both;
+}
+header{
+    display: block;
+    position: relative;
+    left: 300px;
+    padding: 10px 0;
+    background-color: #78909c;
+    width: calc(100% - 300px);
+    transition: 800ms;
+    transition-property: left,width;
+}
+
+div.loggout{
+    float: right;
+    padding-right: 20px;
+}
+div label{
+    font-size: 18px;
+    color: white;
+    padding-left: 10px;
+}
+div a span{
+    font-size: 16px;
+    color: white;
+    margin-left: 10px;
+}
+div a{
+    text-decoration: none;
+}
+div.menu{
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #455a64;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 10px;
+    transition-duration: 1000ms;
+    transition-property: left,width,padding;
+}
+div.menu .menu-wraper{
+    width: 300px;
+
+}
+div.box-usuario{
+    text-align: center;
+}
+div.avatar-usuario{
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    text-align: left;
+    border-radius: 50%;
+    border: solid 2px #2f3d42;
+}
+div.img-usuario{
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    text-align: left;
+    border-radius: 50%;
+    border: solid 2px #2f3d42;
+}
+div.img-usuario img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+div.nome-usuario{
+    text-align: center;
+    margin-top: 5px;
+}
+.nome-usuario p {
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.itens-menu{
+    margin-top: 15px;
+}
+.itens-menu h2{
+    font-size: 17px;
+    background-color: #2f3d42;
+    padding: 8px 10px;
+    color: white;
+    font-weight: normal;
+    border-top: 2px #444;
+}
+.itens-menu a{
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    border-top: solid 2px #444;
+}
+div.content{
+    width: calc(100% - 300px);
+    position: relative;
+    left: 300px;
+    padding: 10px;
+    transition: 1s;
+    transition-property: left,width;
+}
+.box-content{
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.w100{
+    width: 100%;
+}
+.w50{
+    width: 49%;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+.box-content  h2{
+    font-size: 20px;
+    font-weight: normal;
+    padding-top: 10px;
+    color: #78909c;
+}
+.box-content .box-metricas{
+    width: 33.33%;
+    float: left;
+    border: solid 3px #fff;
+    padding:15px;
+    margin-top: 10px; 
+}   
+.box-metricas h2{
+    color: white;
+    font-size: 18px;
+    padding: 0;
+    padding-bottom: 10px;
+}
+.box-metricas p{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+.box-content .box-metricas:nth-of-type(1){
+    background-color: rgb(248, 252, 5);
+}
+.box-content .box-metricas:nth-of-type(2){
+    background-color: rgb(252, 147, 62);
+}
+.box-content .box-metricas:nth-of-type(3){
+    background-color: rgb(59, 230, 59);
+}
+
+.box-content .table-reponsive{
+    margin-top: 10px;
+}
+.box-content .col, .box-content .colP{
+    float: left;
+    width: 50%;
+    padding-left: 10px;
+}
+.box-content .colP{
+    width: 33.33%;
+}
+.box-content .row{
+    padding: 8px 0;
+    color: #555;
+    border-bottom: solid 1px #bbb;
+}
+.box-content .row:nth-of-type(1){
+    border-bottom: solid 2px #aaa;
+    font-weight: bold;
+    background-color: #ccc;
+}
+.box-content form label{
+    color: #555;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px 0;
+}
+
+.box-content form input[type=text],.box-content form input[type=password],
+.box-content form input[type=email]{
+    font-size: 14px;
+    padding-left: 8px;
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    border: solid 1px #ccc;
+}
+.box-content .form-group textarea{
+    font-size: 14px;
+    padding: 8px;
+    height: 70px;
+    width: 100%;
+    border: solid 1px #ccc;
+    resize: vertical;
+}
+.box-content select{
+    font-size: 14px;
+    padding-left: 8px;
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    border: solid 1px #ccc;
+}
+.box-content .form-group{
+    margin: 15px 0;
+}
+.box-content form input[type=file]{
+    font-size: 14px;
+    padding-left: 8px;
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    border: solid 1px #ccc;
+}
+.box-content form input[type=submit],.form-group input[type=button]{
+    width: 100px;
+    height:40px;
+    border-radius: 5px;
+    margin-top: 15px;
+    background-color: #aaa;
+    color: white;
+    letter-spacing: 1px;
+    border: 0;
+    cursor: pointer;       
+    display: block;
+}
+.form-group input[type=button]{
+    width: 130px;
+    background-color: #076ab0;
+    display: inline-block;
+    margin-right: 20px;
+}
+/*box-alert*/
+.box-alert{
+    width: 100%;
+    padding:8px 0;
+    text-align: center;
+}
+.sucesso{
+    background-color: #a5d6a7;
+    color: white;
+}
+.erro{
+    background-color: #F75353;
+    color: white;
+}
+.box-alert img{
+    margin-right: 4px;
+}
+/*fim box-alert*/
+.menu-active{
+    background-color: #3a4b51;
+}
+
+/*tabelas*/
+table{
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+table tr:nth-of-type(1){
+    background-color: #0091ea;
+    color: white;
+}
+table tr{
+    border-bottom: solid 1px #ccc;
+    color: #555;
+}
+table td{
+    min-width: 100px;
+    padding: 8px;
+    word-break: break-all;
+}
+table a.btn{
+    text-decoration: none;
+    padding: 4px 6px;
+    font-size: 13px;
+    color: white;
+}
+
+table a.btn.delete{ background-color: #e05c4e;}
+table a.btn.edit{ background-color: #e05c4e;}
+table a.btn.order{ background-color: #0091ea;}
+/*fim tabelas*/
+
+/*paginação*/
+.paginacao{
+    margin-top: 30px;
+    text-align: center;
+}
+.paginacao .caixa-controle.numero{
+    display: inline-block;
+}
+.paginacao .caixa-controle.numero a{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    background-color: #ccc;
+    margin-right: 10px;
+}
+.paginacao .caixa-controle.numero a.select-page{
+    background: #333;
+    display: inline-block;
+}
+/*fim painel de controle*/
+@media screen and (max-width: 920px) {
+    section.entrar form{
+        width: 100%;
+        max-width: 550px;
+        height: 350px;
+        border-radius: 40px ;
+        text-align: center;
+        margin: 100px auto;
+        background-color: #5e554e;
+        box-shadow: 5px 5px 10px 5px;
+        padding-top: 30px;
+        }
+}
+@media screen and (max-width: 768px) {
+    .menu{
+       display: none;
+    }
+    div.content{
+        width: 100%;
+        left: 0;
+    }
+        header{
+        width: 100%;
+        left: 0;
+    }
+    .box-content .box-metricas{
+        width: 100%;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    div.menu .menu-wraper{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 550px) {
+    section.entrar form{
+        width: 100%;
+        max-width: 300px;
+        height: 250px;
+        border-radius: 40px ;
+        text-align: center;
+        margin: 100px auto;
+        background-color: #5e554e;
+        box-shadow: 5px 5px 10px 5px;
+        padding-top: 10px;
+        }
+    section.entrar  input:not(input[type=submit]){
+        width: 100%;
+        height: 30px;
+        padding-left: 10px;
+        line-height: 30px;
+        color: #333;
+        border:0;
+        margin-top: 10px;
+        border-radius: 10px;
+        font-size: 13px;
+        }
+    section.entrar input[type=submit]{
+        width: 80px;
+        height:30px;
+        } 
+    section.entrar .input{
+        width: 100%;
+        margin-top: 00px;
+        padding: 10px 20px;
+        
+        }
+
+}
